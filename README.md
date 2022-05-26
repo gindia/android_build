@@ -29,16 +29,18 @@ Prerequisites
     $ sdkmanager "build-tools;30.0.3" "platform-tools" "platforms;android-31"
     ```
 
+Debug Key
+==
+if not sure how to get debug.keystore.
+```shell
+$ keytool -keyalg RSA -genkeypair -alias debug -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12
+```
+> keytool comes with jdk
+
 How to build
 ==
-run 
-```shell 
-$ ./build 
+run
+```shell
+$ ./build
 ```
 > if `./build` dose not have execution rights just type `chmod +x ./build` before running.
-
-
-***
-***
-***
-# PROFIT!
