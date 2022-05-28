@@ -19,7 +19,6 @@ Prerequisites
         export ANDROID_USER_HOME="$HOME/.local/android/SDK"
         export ANDROID_HOME="$ANDROID_USER_HOME"
         export ANDROID_AVD_HOME="$ANDROID_USER_HOME/avd"
-        export QEMU_AUDIO_DRV="alsa"
         if [[ ! $PATH == *"$HOME/.local/android/SDK/cmdline-tools/tools/bin"* ]]; then
             export PATH="$PATH:$HOME/.local/android/SDK/cmdline-tools/tools/bin"
         fi
